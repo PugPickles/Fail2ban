@@ -1,0 +1,12 @@
+{
+  "name": "fail2ban_json",
+  "version": "1.0.0",
+  "description": "json based fail2ban integration",
+  "main": "index.js",
+  "author": "PugPickles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PugPickles/Fail2ban.git"
+  },
+  "license": "ISC"
+}
