@@ -4,6 +4,8 @@ json based fail2ban integration for nodejs (npm)
 
 #### Functions
 ```js
+const f2b = require("fail2ban_json");
+
 f2b.config({
     "bantime": {
         "mode": "m",    // s = seconds | m = minutes | h = hours | d = days
