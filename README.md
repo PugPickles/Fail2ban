@@ -1,5 +1,5 @@
 # Fail2ban
-json based fail2ban integration for nodejs (npm)
+json based fail2ban integration for nodejs
 
 https://www.npmjs.com/package/fail2ban_json
 

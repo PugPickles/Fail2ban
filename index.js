@@ -46,7 +46,13 @@ function log(msg) {
         return;
     }
 
-    fs.appendFileSync(path.join(config.path, "log.log"), `${new Date(Date.now()).toLocaleString()} | ${msg}\n`, error => {
+    let data = fs.readFileSync(path.join(config.path, "log.log")).toString().split("\n");
+
+    data.splice(0, 0, `${new Date(Date.now()).toLocaleString()} | ${msg}`);
+    
+    let newData = data.join("\n");
+
+    fs.writeFileSync(path.join(config.path, "log.log"), newData, function (error) {
         if (error) {
             console.error(error);
             process.exit(1);
