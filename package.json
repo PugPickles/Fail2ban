@@ -1,6 +1,6 @@
 {
   "name": "fail2ban_json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "json based fail2ban integration",
   "main": "index.js",
   "author": "PugPickles",
